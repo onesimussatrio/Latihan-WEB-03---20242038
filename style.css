@@ -1,0 +1,342 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 96%;
+    margin: 10px auto;
+    border: 1px solid #e0a800;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 80px;
+    background-color: #ffe5c8;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 62px;
+    height: 62px;
+
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 18px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+    height: 210px;
+    background-color: #d9e7fa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    font-size: 13px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    min-height: 230px;
+    background-color: #fff2c9;
+
+    padding: 22px 50px;
+}
+
+
+/* BUTTON SECTION */
+
+.section-button {
+    width: 106px;
+    height: 56px;
+
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 28px;
+
+    font-size: 12px;
+}
+
+
+/* SERVICE CONTENT */
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.service-box {
+    width: 30%;
+}
+
+.service-box h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.service-box p {
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 130px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    min-height: 280px;
+    background-color: #dfd2e8;
+
+    padding: 29px 65px;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 13px;
+
+    margin-bottom: 22px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.about-description {
+    width: 45%;
+}
+
+.about-description h2,
+.performance h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.about-description p {
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 150px;
+}
+
+
+/* PERFORMANCE */
+
+.performance {
+    width: 45%;
+}
+
+.wave {
+    width: 170px;
+    height: 55px;
+
+    background-color: white;
+
+    border: 1px solid black;
+
+    border-radius: 50% 20% 50% 20%;
+
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    min-height: 240px;
+    background-color: #d9ecd5;
+
+    padding: 20px 50px;
+}
+
+
+/* FORM */
+
+.form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 27px;
+    margin-bottom: 20px;
+}
+
+.form-row input {
+    width: 50%;
+    height: 21px;
+
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.form textarea {
+    width: 100%;
+    height: 70px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    resize: none;
+
+    display: block;
+    margin-bottom: 9px;
+}
+
+.form button {
+    width: 112px;
+    height: 21px;
+
+    background-color: #0759df;
+    color: white;
+
+    border: 1px solid #003ca0;
+    border-radius: 3px;
+
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #004bc5;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    height: 50px;
+
+    background-color: #ffe5c8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    .services,
+    .about,
+    .contact {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .service-content {
+        gap: 15px;
+    }
+
+    .service-box h2,
+    .about-description h2,
+    .performance h2 {
+        font-size: 19px;
+    }
+
+    .about-content {
+        gap: 25px;
+    }
+
+}
